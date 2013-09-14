@@ -21,3 +21,4 @@ echo "zip tmp app to ipa file"
 cd temp; zip -qr $DEST_IPA ./*;cd ..
 echo "remove tmp dir"
 rm -rf "temp"
+exit 0
