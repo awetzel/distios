@@ -14,15 +14,16 @@ Dependencies : `MacOSX + XCode + Xcode command line tools + python3.3`
 - set up the IOS application repository, branch, build configuration and build
   target to allow the script to compile the application
 - customize the distribution website : customize the html template and css
+- enter your distribution certificate and private key in `/distribute.keychain`
 
-Then run the script `update_google_drive`, authorize with OAuth the application
+Then run the script `distios.py`, authorize with OAuth the application
 with an account with read/write permissions on the given spreadsheet and
 folder. Then the script will handle the entire distribution process through a nice web UI :
 
 - Clone the repo and check if the given branch is synchronised in `/build/nomrepo-repo`.
 - Compile the application if not present in `/build/nomtarget.app`.
 - Create a PNG icon for the App from the generated application icon, put it in `/nomtarget.png`.
-- Ask you to upload a provisioning profile 
+- Ask you to upload a provisioning profile, store it in `/build/nomtarget.mobileprovision`
 - check that the profile application identifier match the application bundler
   identifier, ask you a new profile if not.
 - Check that all moderated devices UDID from the spreadsheet are present in the
