@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>client_id</key>
+        <string>xxxGoogleAPIclientIDxxx.apps.googleusercontent.com</string>
+        <key>client_secret</key>
+        <string>xxxGoogleAPIclientSecret</string>
+        <key>listen</key>
+        <string>localhost</string>
+        <key>port</key>
+        <string>6556</string>
+        <key>folder_id</key>
+        <string>xxxxxGoogleDocWebsiteFolderId</string>
+        <key>spreadsheet_id</key>
+        <string>xxxxxGoogleSpreadsheetIDxxxxx</string>
+        <key>spreadfield_udid</key>
+        <string>putyouripadiphoneudid</string>
+        <key>spreadfield_desc</key>
+        <string>describeyouripadin2or3words</string>
+        <key>projects</key>
+        <array>
+            <dict>
+                <key>name</key>
+                <string>Application Name</string>
+                <key>repo</key>
+                <string>git://xxxxx/.git</string>
+                <key>branch</key>
+                <string>master</string>
+                <key>target</key>
+                <string>application-target</string>
+                <key>sdk</key>
+                <string>iphoneos6.1</string>
+                <key>conf</key>
+                <string>Release</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Application Name 2</string>
+                <key>repo</key>
+                <string>git://xxxxx/.git</string>
+                <key>branch</key>
+                <string>master</string>
+                <key>target</key>
+                <string>application-target-2</string>
+                <key>sdk</key>
+                <string>iphoneos6.1</string>
+                <key>conf</key>
+                <string>Release</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
